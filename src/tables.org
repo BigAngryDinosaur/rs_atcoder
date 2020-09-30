@@ -1,0 +1,93 @@
+
+#+OPTIONS: ^:{}
+
+* Dynamic Programming
+
+** A Frog 1
+
+*** Problem Statement
+There are N stones, numbered 1,2,…,N. For each i (1≤i≤N), the height of Stone i is h_{i}
+There is a frog who is initially on Stone 1. He will repeat the following action some number of times to reach Stone N:
+    - If the frog is currently on Stone i, jump to Stone i+1 or Stone i+2. Here, a cost of |hi−hj| is incurred, where j is the stone to land on.
+Find the minimum possible total cost incurred before the frog reaches Stone N
+
+
+c(i) => min(c[i-1] + abs(h[i] - h[i-1]], c[i-2] + abs(h[i] - h[i-2]))
+
+**** Example 1
+| Stone Heights | Cost |
+|---------------+------|
+|            10 |    0 |
+|            30 |   20 |
+|            40 |   30 |
+|            20 |   30 |
+|---------------+------|
+
+**** Example 2
+| Stone Heights | Cost |
+|---------------+------|
+|            30 |    0 |
+|            10 |   20 |
+|            60 |   30 |
+|            10 |   20 |
+|            60 |   30 |
+|            50 |   40 |
+
+
+
+
+** A Frog 2
+
+*** Problem Statement
+There are N stones, numbered 1,2,…,N. For each i (1≤i≤N), the height of Stone i is h_{}_{}_{i}
+There is a frog who is initially on Stone 1. He will repeat the following action some number of times to reach Stone N:
+    - If the frog is currently on Stone i, jump to Stone i+1 or Stone i+2. Here, a cost of |hi−hj| is incurred, where j is the stone to land on.
+Find the minimum possible total cost incurred before the frog reaches Stone N
+
+
+c(i) => min(c[i-1] + abs(h[i] - h[i-1]], c[i-2] + abs(h[i] - h[i-2]))
+
+**** Example 1
+| Stone Heights |  1 |  2 |
+|---------------+----+----|
+|            10 |  0 |  0 |
+|            30 | 20 | 20 |
+|            40 | 30 | 30 |
+|            20 | 50 | 30 |
+|---------------+----+----|
+
+**** Example 2
+| Stone Heights | Cost |
+|---------------+------|
+|            30 |    0 |
+|            10 |   20 |
+|            60 |   30 |
+|            10 |   20 |
+|            60 |   30 |
+|            50 |   40 |
+
+
+** Vacation
+
+*** Example 1
+
+Input
+|---+----+-----+
+|  A |  B |  C |
+|---+----+-----+
+| 10 | 40 | 70 |
+| 20 | 50 | 80 |
+| 30 | 60 | 90 |
+|---+----+-----+
+
+DP Table
+|---+----+-----+-----|
+|   |  1 |   2 |   3 |
+|---+----+-----+-----|
+| A | 10 |  90 | 150 |
+| B | 40 | 120 | 180 |
+| C | 70 | 120 | 210 |
+|---+----+-----+-----|
+
+
+** Knapsack 1
