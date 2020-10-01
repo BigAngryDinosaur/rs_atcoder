@@ -18,18 +18,22 @@ fn main() {
                                           .collect())
                                      .collect();
 
-    let mut dp = vec![vec![0;capacity+1];num_items+1];
+    let mut dp = vec![0;capacity+1];
+    for c in 1..=capacity {
+        if data[0][0] <= c {
+            dp[c] = data[0][1];
+        }
+    }
 
-    for i in 1..=num_items {
-        for c in 1..=capacity {
-            let (weight, profit) = (data[i-1][0], data[i-1][1]);
-            dp[i][c] = dp[i-1][c];
+    for i in 1..num_items {
+        for c in (1..=capacity).rev() {
+            let (weight, profit) = (data[i][0], data[i][1]);
             if weight <= c {
-                dp[i][c] = max(dp[i][c], profit + dp[i-1][c-weight]);
+                dp[c] = max(dp[c], profit + dp[c-weight]);
             }
         }
     }
 
-    let result = dp.last().unwrap().last().unwrap();
+    let result = dp.last().unwrap();
     println!("{}", result);
 }
