@@ -7,7 +7,6 @@ fn main() {
     let stdin = io::stdin();
     let handle = stdin.lock();
     let mut lines = handle.lines().map(|l| l.unwrap());
-
     let line1 = lines.next().unwrap().split_whitespace().map(|x| x.parse().expect("")).collect::<Vec<usize>>();
     let num_items = line1[0];
     let capacity = line1[1];

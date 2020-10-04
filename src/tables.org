@@ -113,3 +113,16 @@ DP Table
 | B | 0 | 0 | 30 | 50 | 50 | 50 | 80 | 80 |
 | C | 0 | 0 | 30 | 50 | 60 | 60 | 80 | 90 |
 |---+---+---+----+----+----+----+----+----|
+
+
+
+- Hybrid Theory <- Linkin Park
+- Fallen <- Evanescence
+- American Idiot <- Green Day
+- This is War <- 30 Seconds to Mars
+- Paper Walls <- Yellowcard
+- Underclass Hero <- Sum 41
+- Keep The Faith <- Bon Jovi
+- Simple Plan <- Simple Plan
+- Siren Song of the Counter Culture <- Rise Against
+- Yourself or Someone Like You <- Matchbox Twenty
